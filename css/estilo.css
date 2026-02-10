@@ -23,7 +23,15 @@ body, html{
 body {
 
     background:url("../imagens/bkg1.png");
-    background-size: cover;
+    background-size: cover; 
+}
+
+h1{
+    text-decoration: none;
+    color: aqua;
+    text-align: center;
+
+}
 
 h2 {
 margin-top: 20px;
@@ -102,7 +110,86 @@ background: url("../imagens/icone-bit.png") no-repeat center;
 
 /*conteudo-home*/
 
+#servicos {
+ 
 
+}
+
+#servicos h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #38bdf8;
+}
+
+#servicos > p {
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+
+.servicos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.servico {
+  background-color: #020617;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servico:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+}
+
+.servico h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #7dd3fc;
+}
+.servico ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.servico ul li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #e5e7eb;
+}
+
+.servico ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #38bdf8;
+  font-size: 1.2rem;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  #servicos {
+    padding: 3rem 1rem;
+  }
+
+  #servicos h2 {
+    font-size: 1.8rem;
+  }
+}
 
 
 /*conteudo-projeto*/
@@ -122,7 +209,8 @@ background: url("../imagens/icone-bit.png") no-repeat center;
     margin-bottom: 2%;
 
    display: flex;
-   flex-direction:row;
+    flex-direction: column;
+    align-items: center; 
     
 
     background: rgba(40, 142, 211, 0.6) no-repeat center;
