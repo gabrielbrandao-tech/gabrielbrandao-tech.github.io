@@ -3,15 +3,11 @@
     padding: 0; 
 }
 
-a a:hover {
+a:hover {
     text-decoration: none;
     font-size: 18px;
     cursor: pointer;
 
-}
-
-#conteiner {
-        
 }
 
 body, html{
@@ -110,11 +106,6 @@ background: url("../imagens/icone-bit.png") no-repeat center;
 
 /*conteudo-home*/
 
-#servicos {
- 
-
-}
-
 #servicos h2 {
   text-align: center;
   font-size: 2.2rem;
@@ -196,7 +187,7 @@ background: url("../imagens/icone-bit.png") no-repeat center;
 
 
 
-    #container-projetos-1 {
+    .container-projetos-1 {
 
     padding: 02% 02% 02% 02%;
     margin-top: 15%;
@@ -240,7 +231,7 @@ background: url("../imagens/icone-bit.png") no-repeat center;
 
 
 
-    #container-projetos-2 {
+    .container-projetos-2 {
 
     padding: 02% 02% 02% 02%;
     margin-left: auto;
@@ -441,11 +432,6 @@ background: url("../imagens/icone-bit.png") no-repeat center;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-}
-
-.icone {
-    width: 180px;
-    height: 180px;
 }
 
 .icone {
