@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+a a:hover {
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+#conteiner {
+        
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    
+}
+
+body {
+
+    background:url("../imagens/bkg1.png");
+    background-size: cover;
+
+h2 {
+margin-top: 20px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+/*topo*/
+#topo {
+    width: 95%;
+    min-height: 7%;
+    padding: 0 2%;
+    background: rgba(14, 15, 19, 0.3);
+    border-radius: 15px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+/*logo*/
+
+#logo h1 {
+    display: none;
+}
+
+#logo {
+    width: 20%;
+    height: 15%;
+    margin: 5%;
+background: url("../imagens/icone-bit.png") no-repeat center;
+    background-position: center;
+    background-size: contain;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+/*menus*/
+#menu-superior {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+    padding: 0;      
+    position: static; 
+}
+
+/*links-menu-superior*/
+#menu-superior a {
+    text-decoration: none;
+    color: aqua;
+    font-size: 18px;
+}
+
+#menu-superior a:hover {
+    color: red;
+    background: rgba(14, 15, 19, 0.6);
+    padding: 5% 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*conteudo-topo*/
+
+
+/*conteudo-home*/
+
+
+
+
+/*conteudo-projeto*/
+
+
+
+    #container-projetos-1 {
+
+    padding: 02% 02% 02% 02%;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 10%;
+    min-height: 100px;
+    min-width: 500px;
+    margin-bottom: 2%;
+
+   display: flex;
+   flex-direction:row;
+    
+
+    background: rgba(40, 142, 211, 0.6) no-repeat center;
+    border-radius: 20px;
+
+    text-align: center;
+
+}
+
+    .projeto1 {
+        width: 100%;
+        height: 100%;
+        background: url("../imagens-projetos/projeto-rat.png") no-repeat center;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .projeto2 {
+        width: 100%;
+        height: 100%;
+        background: url("../imagens-projetos/projeto-rat-sem-padrao.png") no-repeat center;
+        background-position: center;
+        background-size: contain;
+    }
+
+
+
+
+
+    #container-projetos-2 {
+
+    padding: 02% 02% 02% 02%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 10%;
+    min-height: 100px;
+    min-width: 500px;
+    margin-bottom: 2%;
+
+   display: flex;
+   flex-direction:row;
+    
+
+    background: rgba(40, 142, 211, 0.6) no-repeat center;
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+    .projeto3 {
+        width: 100%;
+        height: 100%;
+        background: url("../imagens/icone-bit.png") no-repeat center;
+        background-position: center;
+        background-size: contain;
+        border-radius: 15%;
+        border: solid red;
+    }
+    .projeto4 {
+        width: 100%;
+        height: 100%;
+        background: url("../imagens/icone-bit.png") no-repeat center;
+        background-position: center;
+        background-size: contain;
+        border-radius: 15%;
+        border: solid red;
+
+    }
+
+
+
+
+/*conteudo-quem-sou*/
+
+    #conteudo-quem-sou h1 {
+        margin-top: -15%;
+        margin-bottom: 5%;
+        
+    }
+
+#conteudo-quem-sou {
+
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 20%;
+     padding: 05% 05% 05% 05%;
+    width: 70%;
+    height: 20%;
+    min-height: 300px;
+    min-width: 500px;
+    padding-top: 15%;
+    margin-bottom: 5%;
+
+   display: flex;
+   flex-direction: column;
+    
+
+    background: rgba(40, 142, 211, 0.6) no-repeat center;
+    border-radius: 20px;
+
+    text-align: center;
+    
+
+}
+
+
+/*conteudo-Projetos*/
+
+
+/*Meu-Curriculo*/
+
+.curriculo {
+    width: 70%;
+    margin: 0 auto 80px auto;
+    padding: 40px;
+
+    background: rgba(40, 142, 211, 0.6);
+    border-radius: 20px;
+
+    color: #fff;
+}
+
+.curriculo h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.curriculo h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.curriculo .local {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.curriculo h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: aqua;
+}
+
+.curriculo h4 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.curriculo .periodo {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.curriculo p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.curriculo ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.curriculo ul li {
+    margin-bottom: 6px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+
+
+/*conteudo-contato*/
+
+.whatsapp {
+    background: url("../imagens/whatsapp.png") no-repeat center;
+    background-size: contain;
+}
+
+.email {
+    background: url("../imagens/email.png") no-repeat center;
+    background-size: contain;
+}
+
+.linkdin {
+    background: url("../imagens/linkedin.png") no-repeat center;
+    background-size: contain;
+}
+
+.github {
+    background: url("../imagens/github.png") no-repeat center;
+    background-size: contain;
+}
+
+.download {
+    background: url("../imagens/download.png") no-repeat center;
+    background-size: contain;
+}
+
+.contatos {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.contatos li {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.contatos a {
+    text-decoration: none;
+    color: aqua;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.icone {
+    width: 180px;
+    height: 180px;
+}
+
+.icone {
+    width: 180px;
+    height: 180px;
+}
+
+
+/*rodape*/
+#rodape {
+    width: 100%;
+    font-size: 14px;
+    font-style: italic;
+    background: rgba(14, 15, 19, 0.6);
+    color: aqua;
+    text-align: center;
+}
+
+
+/*
+
+*/
