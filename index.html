@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     
     <title>GABRIEL BRANDAO</title>
+
 
 </head>
 
@@ -16,199 +21,179 @@
 
     <div id="conteiner">
         
-<header>
+        <header class="mb-5">
+            <!-- Navbar -->
+            <nav id="topo" class="navbar navbar-expand-lg p-3">
+                <div class="container-fluid">
+                    
+                    <!-- logo -->
+                    <a href="https://gabriel-brandao.dev/" id="logo" class="navbar-brand text-decoration-none">
 
-    <!--logo-->
+                        <h1>B.I.T Solucões em T.I</h1>
+                    </a>
 
-    <a href="https://gabriel-brandao.dev/" id="logo"><h1>
-        B.I.T Solucões em T.I
-         </h1></a>
+                    <!-- Hamburguer do Bootstrap -->
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuColapso" aria-controls="menuColapso" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-     <!--menu-de-navegacao-->
+                    <!-- menu-de-navegacao Colapse -->
+                    <div class="collapse navbar-collapse justify-content-end" id="menuColapso">
+                        <ul id="menu-superior" class="navbar-nav text-center gap-2 mt-3 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Projetos.html">Projetos</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="Quem-sou.html">Quem sou</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="Meu-curriculo.html">Meu currículo</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="contatos.html">Contatos</a>
+                            </li>
+                        </ul>
+                    </div>
 
-    <div id="topo">
+                </div>
+            </nav>
+        </header>
 
-    <ul id="menu-superior">
-    <li>
-        <a href="index.html">HOME</a>
-    </li>
-    <li>
-        <a href="Projetos.html">Projetos</a>
-    </li> 
-    <li>
-        <a href="Quem-sou.html">Quem sou</a>
-    </li> 
-    <li>
-        <a href="Meu-curriculo.html">Meu currículo</a>
-    </li> 
-    <li>
-        <a href="contatos.html">Contatos</a>
-    </li>
-    </ul>
-
-</div>
-
-
-</header>
-
-
-
-<nav>
-
-
+<main>
+    <!-- SERVIÇOS -->
     <div class="container-projetos-1">
+        <section id="servicos">
+            <h2>Serviços Prestados</h2>
+            <p>
+                Ofereço soluções em <strong>desenvolvimento web</strong> e
+                <strong>suporte técnico nível N3</strong>, focadas em estabilidade,
+                organização, desempenho e boas práticas.
+            </p>
 
-<section id="servicos">
-  <h2>Serviços Prestados</h2>
-  <p>
-    Ofereço soluções em <strong>desenvolvimento web</strong> e
-    <strong>suporte técnico nível N3</strong>, focadas em estabilidade,
-    organização, desempenho e boas práticas.
-  </p>
+            <!-- REMOVIDO o "row" e os "col-", deixando o seu CSS Grid original brilhar -->
+            <div class="servicos-container">
+                <div class="servico">
+                    <h3>💻 Desenvolvimento Web</h3>
+                    <ul>
+                        <li>Criação de sites institucionais e portfólios</li>
+                        <li>Desenvolvimento de páginas responsivas (desktop e mobile)</li>
+                        <li>Estruturação com HTML5, CSS3 e Bootstrap</li>
+                        <li>Interações básicas e organização com JavaScript</li>
+                    </ul>
+                </div>
 
-  <div class="servicos-container">
+                <div class="servico">
+                    <h3>🧩 Manutenção e Ajustes</h3>
+                    <ul>
+                        <li>Correção de erros visuais e funcionais</li>
+                        <li>Ajustes de layout e responsividade</li>
+                        <li>Organização, refatoração e limpeza de código</li>
+                        <li>Atualização de conteúdo em sites existentes</li>
+                    </ul>
+                </div>
 
-    <div class="servico">
-      <h3>💻 Desenvolvimento Web</h3>
-      <ul>
-        <li>Criação de sites institucionais e portfólios</li>
-        <li>Desenvolvimento de páginas responsivas (desktop e mobile)</li>
-        <li>Estruturação com HTML5 , CSS3 e bootstrap</li>
-        <li>Interações básicas e organização com JavaScript</li>
-      </ul>
+                <div class="servico">
+                    <h3>⚙️ Versionamento e Publicação</h3>
+                    <ul>
+                        <li>Controle de versão com Git e GitHub</li>
+                        <li>Publicação e manutenção via GitHub Pages</li>
+                        <li>Organização de repositórios seguindo boas práticas</li>
+                    </ul>
+                </div>
+
+                <div class="servico">
+                    <h3>🛠️ Suporte Técnico N3</h3>
+                    <ul>
+                        <li>Diagnóstico e resolução de problemas avançados em sistemas Linux</li>
+                        <li>Correção de falhas em inicialização e serviços</li>
+                        <li>Gerenciamento de pacotes, dependências e permissões</li>
+                        <li>Análise de logs e troubleshooting avançado</li>
+                        <li>Apoio técnico para ambientes de desenvolvimento</li>
+                    </ul>
+                </div>
+
+                <div class="servico">
+                    <h3>🚀 Conhecimentos em Evolução</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>WordPress</li>
+                        <li>SQL</li>
+                        <li>Java (em aprendizado contínuo)</li>
+                        <li>Boas práticas de código, desempenho e acessibilidade</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <div class="servico">
-      <h3>🧩 Manutenção e Ajustes</h3>
-      <ul>
-        <li>Correção de erros visuais e funcionais</li>
-        <li>Ajustes de layout e responsividade</li>
-        <li>Organização, refatoração e limpeza de código</li>
-        <li>Atualização de conteúdo em sites existentes</li>
-      </ul>
-    </div>
-
-    <div class="servico">
-      <h3>⚙️ Versionamento e Publicação</h3>
-      <ul>
-        <li>Controle de versão com Git e GitHub</li>
-        <li>Publicação e manutenção via GitHub Pages</li>
-        <li>Organização de repositórios seguindo boas práticas</li>
-      </ul>
-    </div>
-
-    <div class="servico">
-      <h3>🛠️ Suporte Técnico N3</h3>
-      <ul>
-        <li>Diagnóstico e resolução de problemas avançados em sistemas Linux</li>
-        <li>Correção de falhas em inicialização e serviços</li>
-        <li>Gerenciamento de pacotes, dependências e permissões</li>
-        <li>Análise de logs e troubleshooting avançado</li>
-        <li>Apoio técnico para ambientes de desenvolvimento</li>
-      </ul>
-    </div>
-
-    <div class="servico">
-      <h3>🚀 Conhecimentos em Evolução</h3>
-      <ul>
-        <li>python</li>
-        <li>WordPress</li>
-        <li>SQL</li>
-        <li>Java (em aprendizado contínuo)</li>
-        <li>Boas práticas de código, desempenho e acessibilidade</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-    </div>
-
+    <!-- PROJETOS -->
     <div class="container-projetos-2">
-
         <h1>Projetos</h1>
-
         <ul class="contatos">
+            <li>
+                <a href="https://gabrielbrandao-tech.github.io/oliveira-drive/index.html">
+                    <div class="icone projeto1"></div>
+                    <span>Oliva - drive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://gabrielbrandao-tech.github.io/Preenchimento-de-documentos/">
+                    <div class="icone projeto3"></div>
+                    <span>Preenchimento de documentos</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://gabrielbrandao-tech.github.io/pagina-para-Casamentos/">
+                    <div class="icone projeto2"></div>
+                    <span>Site para casamentos</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 
-        <li>
-            <a href="https://gabrielbrandao-tech.github.io/oliveira-drive/index.html">
-                <div class="icone projeto1"></div>
-                <span>Oliva - drive</span>
-            </a>
-        </li>
+    <!-- CONTATOS -->
+    <div class="container-projetos-2 mb-5">
+        <h1>Contatos</h1>
+        <ul class="contatos">
+            <li>
+                <a href="https://wa.me/5511912973410?text=Olá!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20falar%20com%20você">
+                    <div class="icone whatsapp"></div>
+                    <span>WhatsApp</span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:gabriel.brandao.pj@gmail.com?subject=Contato%20pelo%20site&body=Olá!%20Vim%20pelo%20seu%20portfólio%20e%20gostaria%20de%20falar%20com%20você.">
+                    <div class="icone email"></div>
+                    <span>Email</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/gabrielbrandao-tech">
+                    <div class="icone linkdin"></div>
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/gabrielbrandao-tech">
+                    <div class="icone github"></div>
+                    <span>GitHub</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</main>
 
-        <li>
-            <a href="https://gabrielbrandao-tech.github.io/Preenchimento-de-documentos/">
-                <div class="icone projeto3"></div>
-                <span>Preenchimento de documentos</span>
-            </a>
-        </li>
-
-
-        <li>
-            <a href="https://gabrielbrandao-tech.github.io/pagina-para-Casamentos/">
-                <div class="icone projeto2"></div>
-                <span>Site para casamentos</span>
-            </a>
-        </li>
-        
-    </ul>
+        <!-- Rodapé -->
+        <footer id="rodape" class="py-3">
+            <h4 class="m-0"> &copy; Copyright 2026 B.I.T Solucões em T.I</h4>
+        </footer>
 
     </div>
 
-   <div class="container-projetos-2">
-
-    <h1>Contatos</h1>
-
-    <ul class="contatos">
-
-        <li>
-            <a href="https://wa.me/5511912973410?text=Olá!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20falar%20com%20você">
-                <div class="icone whatsapp"></div>
-                <span>WhatsApp</span>
-            </a>
-        </li>
-
-        <li>
-            <a href="mailto:gabriel.brandao.pj@gmail.com?subject=Contato%20pelo%20site&body=Olá!%20Vim%20pelo%20seu%20portfólio%20e%20gostaria%20de%20falar%20com%20você.
-">
-                <div class="icone email"></div>
-                <span>Email</span>
-            </a>
-        </li>
-
-        <li>
-            <a href="www.linkedin.com/in/gabrielbrandao-tech">
-                <div class="icone linkdin"></div>
-                <span>LinkedIn</span>
-            </a>
-        </li>
-
-        <li>
-            <a href="https://github.com/gabrielbrandao-tech">
-                <div class="icone github"></div>
-                <span>GitHub</span>
-            </a>
-        </li>
-
-    </ul>
-
-</div>
-
-</nav>
-
-
-
-
-
-    <!--Rodape-->
-    
-    <footer id="rodape">
-        <h4> &copy; Copyright 2026 B.I.T Solucões em T.I</h4>
-    </footer>
-
-</div>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
