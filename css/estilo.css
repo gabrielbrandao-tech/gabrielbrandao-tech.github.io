@@ -37,6 +37,48 @@ p {
     margin-top: 20px;
 }
 
+/*responsividade*/
+@media screen and (max-width: 768px) {
+            #conteiner {
+                width: 100% !important;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            header, #topo, #logo {
+                position: static !important;
+                width: 100% !important;
+                text-align: center;
+                height: auto !important;
+            }
+            #menu-superior {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                align-items: center;
+            }
+            #menu-superior li {
+                margin: 5px 0;
+            }
+            .servicos-container {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .servico {
+                width: 100% !important;
+                box-sizing: border-box;
+            }
+            .contatos {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+            }
+            .contatos li {
+                width: 100% !important;
+                margin-bottom: 10px;
+            }
+        }
+
 /*topo*/
 #topo {
     width: 95%;
